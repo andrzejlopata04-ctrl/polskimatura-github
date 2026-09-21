@@ -1,0 +1,75 @@
+/* Korepetycje: portret, ścieżki nauki i przykład pracy. */
+.kor-hero{padding:118px 5% 62px;background:radial-gradient(ellipse at 95% 45%,#273b43 0,transparent 48%),var(--navy)}
+.kor-hero::before{display:none}
+.kh-inner{max-width:1160px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.85fr);gap:64px;align-items:center;text-align:left}
+.kh-label{font-size:.7rem;letter-spacing:1.7px;margin-bottom:20px;color:#f5bc30}
+.kh-title{font-size:clamp(2.45rem,4.1vw,3.7rem);line-height:1.12;letter-spacing:-.8px;margin-bottom:20px}
+.kh-title em{display:block}
+.kh-desc{font-size:1rem;line-height:1.75;color:#d0d8e5;margin:0 0 25px;max-width:555px}
+.kh-cta{justify-content:flex-start;gap:12px;flex-direction:row;align-items:stretch}
+.kh-cta a{padding:15px 20px;font-size:.93rem;text-align:center;justify-content:center}
+.kh-scope{display:flex;gap:9px;flex-wrap:wrap;list-style:none;margin:0 0 24px}
+.kh-scope li{font-size:.77rem;color:#e0e5ec;padding:6px 11px;border:1px solid #637087;border-radius:5px}
+.kh-contact{color:#bdc8d9;font-size:.8rem;line-height:1.65;margin-top:18px;max-width:530px}
+.kh-contact a{color:#f5bc30;text-underline-offset:3px;white-space:nowrap}
+.kh-portrait{position:relative;margin:0 10px 0 0;min-width:0}
+.kh-portrait::before{content:'';position:absolute;inset:-12px -12px 26px 20px;border:1px solid #b99b55;border-radius:110px 16px 16px 16px;pointer-events:none}
+.kh-portrait img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:96px 12px 0 0;position:relative}
+.kh-portrait figcaption{position:relative;padding:19px 24px 20px;background:#f6efdf;border-radius:0 0 12px 12px;color:var(--navy);display:flex;justify-content:space-between;gap:14px;align-items:center}
+.kh-portrait-name{display:block;font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;margin-bottom:4px}
+.kh-portrait-sub{font-size:.79rem;color:#4e5b60;line-height:1.5}
+.kh-portrait figcaption a{font-size:.78rem;color:var(--navy);text-underline-offset:4px;white-space:nowrap}
+.kh-portrait-note{position:absolute;top:24px;left:-20px;background:var(--gold2);color:var(--navy);padding:11px 17px;border-radius:5px;font-size:.73rem;font-weight:700;letter-spacing:.8px;box-shadow:0 5px 24px #0f1f3d26}
+.kor-trust{background:#f7f0e3;border-bottom:1px solid #e5ddcd;padding:20px 5%}
+.kor-trust ul{max-width:1160px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;list-style:none}
+.kor-trust li{display:flex;align-items:center;gap:12px;font-size:.85rem;line-height:1.5;color:var(--navy)}
+.kor-trust b{display:block;font-weight:600}
+.kor-trust span{color:#55606b;font-size:.78rem}
+.kor-trust .trust-mark{font-family:'Playfair Display',Georgia,serif;font-size:1.55rem;color:#916200;min-width:38px}
+#uslugi .s-label,.lesson-demo .s-label{color:#906000}
+.services-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:30px}
+.services-head .s-title{margin-bottom:0}
+.services-head .s-desc{max-width:370px}
+.service-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:18px}
+.service-card{grid-column:span 4;display:flex;flex-direction:column;text-decoration:none;color:var(--navy);background:#fdf9f3;border:1px solid #deded8;border-radius:14px;overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 10px 30px #0f1f3d12;border-color:#bd943c}
+.service-card-small{grid-column:span 3}
+.service-art{height:115px;display:flex;align-items:center;justify-content:space-between;padding:18px 25px;background:#eee5d3;border-bottom:1px solid #dfd3bb;overflow:hidden;position:relative;gap:10px}
+.service-art-dark{background:#233650;color:#f9f3e7;border-color:#233650}
+.service-art-green{background:#dce6df;border-color:#c3d1c7}
+.service-glyph{font-family:'Playfair Display',Georgia,serif;font-size:3.6rem;line-height:1;letter-spacing:-2px}
+.service-art small{font-size:.66rem;letter-spacing:1.5px;line-height:1.8;text-transform:uppercase;max-width:125px}
+.service-body{padding:23px;display:flex;flex-direction:column;flex:1}
+.service-card h3{font-family:'Playfair Display',Georgia,serif;font-size:1.17rem;line-height:1.3;margin:0 0 10px}
+.service-card p{font-size:.85rem;color:#535d69;line-height:1.65;margin-bottom:20px}
+.service-more{margin-top:auto;font-size:.8rem;font-weight:600;color:#8a5b00}
+.service-index{font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;display:block;color:#916200;margin-bottom:18px}
+.lesson-demo{padding:68px 5%;background:#eee8dc}
+.lesson-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:64px;max-width:1080px;margin:auto;align-items:center}
+.lesson-copy .s-title{font-size:clamp(1.85rem,3vw,2.6rem);line-height:1.18;margin-bottom:18px}
+.lesson-copy>p{color:#4d5864;font-size:.95rem;line-height:1.75;margin-bottom:22px}
+.lesson-copy ol{list-style:none;counter-reset:lesson;display:grid;gap:15px;margin:26px 0}
+.lesson-copy li{counter-increment:lesson;display:flex;align-items:center;gap:12px;color:var(--navy);font-size:.88rem}
+.lesson-copy li::before{content:counter(lesson,decimal-leading-zero);font-family:'Playfair Display',Georgia,serif;color:#916200;font-size:1.25rem}
+.lesson-copy>a{display:inline-flex;align-items:center;min-height:44px;color:var(--navy);font-weight:600;text-underline-offset:5px;font-size:.88rem}
+.lesson-sheet{background:#fffefb;border:1px solid #ddd4c1;box-shadow:12px 12px 0 #d9cfbd;border-radius:3px;padding:30px 32px;color:var(--navy)}
+.sheet-heading{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:15px;border-bottom:1px solid #d8d9d3;margin-bottom:20px;color:#626962;font-size:.7rem;text-transform:uppercase;letter-spacing:1.1px}
+.sheet-heading em{text-transform:none;letter-spacing:0;font-family:'Playfair Display',Georgia,serif;font-size:.9rem;color:var(--navy)}
+.sheet-step{margin:0 0 17px}
+.sheet-step h3{font-size:.69rem;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:#695228;margin:0 0 7px}
+.sheet-step p{font-family:'Playfair Display',Georgia,serif;font-size:1rem;line-height:1.6}
+.sheet-step mark{background:#f9e5ab;color:inherit;padding:0 3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.sheet-note{background:#edf2ed;border-left:3px solid #617d67;padding:14px 16px;font-size:.83rem;line-height:1.65;color:#344b3b}
+.sheet-note strong{display:block;margin-bottom:4px}
+.about-avatar{padding:0;overflow:hidden}
+.about-avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.nav-toggle{background:none;border:0;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #bc850e;outline-offset:5px}
+.kor-hero a:focus-visible,nav a:focus-visible,.nav-toggle:focus-visible{outline-color:#f5bc30}
+#oferta,#uslugi,#jak-pracujemy{scroll-margin-top:85px}
+.zgl{margin-bottom:64px}
+@media(max-width:1050px){.kh-inner{gap:36px;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}.kh-title{font-size:2.8rem}.kh-portrait-note{left:-8px}.kh-portrait figcaption{display:block}.kh-portrait figcaption a{display:inline-block;margin-top:9px}.lesson-layout{gap:34px}.service-card-small{grid-column:span 6}}
+@media(max-width:760px){.kor-hero{padding:100px 6% 42px}.kh-inner{grid-template-columns:1fr;gap:35px}.kh-title{font-size:clamp(2.2rem,7vw,3.2rem);letter-spacing:-.6px}.kh-title em{display:inline}.kh-desc{font-size:.96rem;margin-bottom:20px}.kh-label{font-size:.65rem;line-height:1.7;letter-spacing:1.3px;margin-bottom:14px}.kh-scope{gap:7px;margin-bottom:20px}.kh-scope li{font-size:.7rem}.kh-portrait{max-width:365px;width:90%;margin:0 auto}.kh-portrait img{border-radius:70px 10px 0 0}.kh-portrait-note{left:-12px;top:18px}.kh-portrait figcaption{display:flex;padding:17px 20px}.kh-portrait-name{font-size:1.3rem}.kh-portrait figcaption a{margin:0}.kor-trust ul{grid-template-columns:1fr;gap:16px}.kor-trust li{gap:14px}.kor-trust{padding:23px 6%}.services-head{display:block}.services-head .s-desc{margin-top:16px}.service-card,.service-card-small{grid-column:span 6}.service-card:nth-child(3){grid-column:span 12;display:grid;grid-template-columns:135px minmax(0,1fr)}.service-card:nth-child(3) .service-art{height:100%;flex-direction:column;justify-content:center;text-align:center;padding:18px}.lesson-layout{grid-template-columns:1fr;gap:26px}.lesson-demo{padding:48px 6%}.lesson-sheet{padding:23px;box-shadow:7px 7px 0 #d9cfbd}.sec{padding:50px 0}.service-body{padding:20px}.zgl{margin-left:5%;margin-right:5%;padding:24px 20px}.kh-cta{flex-direction:row;align-items:stretch}.kh-cta .btn-gold{flex:1 1 220px}.kh-cta .btn-outline{flex:1 1 140px}}
+@media(max-width:480px){.service-card,.service-card-small{grid-column:span 12}.service-card:not(.service-card-small){display:grid;grid-template-columns:88px minmax(0,1fr)}.service-art,.service-card:nth-child(3) .service-art{height:100%;padding:14px 8px;flex-direction:column;justify-content:center;text-align:center}.service-art small{display:none}.service-glyph{font-size:2.3rem;letter-spacing:-1px}.service-body{padding:19px}.service-card h3{font-size:1.1rem}.service-card p{font-size:.83rem;margin-bottom:12px}.service-card-small .service-body{padding:20px 22px}.service-index{margin-bottom:9px;font-size:1rem}.service-grid{gap:12px}.kh-portrait figcaption{display:block}.kh-portrait figcaption a{display:inline-block;margin-top:8px}.sheet-step p{font-size:.96rem}.lesson-sheet{padding:22px 20px}.footer-links{flex-wrap:wrap;gap:16px}.kh-contact{overflow-wrap:anywhere}.kh-contact a{white-space:normal}}
+@media(max-width:760px){.kh-portrait{order:-1;display:grid;grid-template-columns:88px minmax(0,1fr);gap:17px;align-items:center;width:100%;max-width:none;margin:0}.kh-portrait::before,.kh-portrait-note{display:none}.kh-portrait img{width:88px;height:88px;border-radius:50%;border:2px solid #c5ac70}.kh-portrait figcaption{display:block;background:none;padding:0;color:#fff}.kh-portrait-name{font-size:1.25rem}.kh-portrait-sub{display:block;color:#c6d1df;font-size:.76rem}.kh-portrait figcaption a{display:inline-block;color:#f5bc30;font-size:.76rem;margin-top:7px}.kh-inner{gap:25px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fade,.service-card,.btn-gold,.btn-outline{transition:none;transform:none}.service-card:hover{transform:none}}
